@@ -28,8 +28,24 @@ public class Schedule {
             }
         }
 
+        System.out.println("The current schedule has the following courses: ");
         for (Course course : schedule) {
             System.out.printf("Index: %d %s %n", schedule.indexOf(course), course.toString());
+        }
+
+        for (Course course : schedule) {
+            boolean addAnotherItem = true;
+            System.out.printf("Enter course items for %s: %n", course.toString());
+
+            while (addAnotherItem == true) {
+                course.addItem();
+                System.out.print("Would you like to add another item (Y/N)? ");
+                if (!keyboard.nextLine().equalsIgnoreCase("y")) {
+                    addAnotherItem = false;
+                }
+            }
+
+            System.out.println(course.courseItems);
         }
 
     }

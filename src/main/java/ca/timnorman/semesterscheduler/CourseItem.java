@@ -1,11 +1,12 @@
 package ca.timnorman.semesterscheduler;
 
+import java.util.Calendar;
 import java.util.Date;
 
 public class CourseItem {
     String description; // Required
     int weekDueDate;    // Required
-    Date dueDate;       // Optional
+    Calendar dueDate;   // Optional
     int gradeWeight;    // Optional
 
     public String getDescription() {
@@ -24,11 +25,11 @@ public class CourseItem {
         this.weekDueDate = weekDueDate;
     }
 
-    public Date getDueDate() {
+    public Calendar getDueDate() {
         return dueDate;
     }
 
-    public void setDueDate(Date dueDate) {
+    public void setDueDate(Calendar dueDate) {
         this.dueDate = dueDate;
     }
 
