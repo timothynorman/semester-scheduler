@@ -43,11 +43,19 @@ public class CourseItem {
 
     @Override
     public String toString() {
+        Date shortDate;
+        if (dueDate != null) {
+            shortDate = dueDate.getTime();
+        } else {
+            shortDate = null;
+        }
         return "CourseItem{" +
                 "description='" + description + '\'' +
                 ", weekDueDate=" + weekDueDate +
-                ", dueDate=" + dueDate +
+                ", dueDate=" + shortDate +
                 ", gradeWeight=" + gradeWeight +
                 '}';
     }
+
+
 }

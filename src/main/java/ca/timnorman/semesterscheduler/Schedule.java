@@ -7,6 +7,7 @@ import java.util.*;
 public class Schedule {
     List<Course> schedule = new ArrayList<>();
     Scanner keyboard = new Scanner(System.in);
+    Calendar startDate;
 
     /**
      * Method to create a new schedule.
@@ -17,7 +18,7 @@ public class Schedule {
 
         // TODO 1. prompt for start date
         System.out.print("Enter the first day of the semester in DD-MM-YYYY format: ");
-        String userInput = keyboard.nextLine();
+        startDate = parseDate(keyboard.nextLine());
 
         // TODO 2. loop to enter course information
         while (addAnotherCourse == true) {
@@ -33,6 +34,7 @@ public class Schedule {
             System.out.printf("Index: %d %s %n", schedule.indexOf(course), course.toString());
         }
 
+        // TODO 3. add items to a course
         for (Course course : schedule) {
             boolean addAnotherItem = true;
             System.out.printf("Enter course items for %s: %n", course.toString());
@@ -66,14 +68,14 @@ public class Schedule {
      * Prompt the user for the first day of the semester and returns a Calendar object of that date.
      * @return startDate Calendar object of the first day of the semester.
      */
-    private Calendar startDate(String userInput) {
+    private Calendar parseDate(String userInput) {
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
         try {
             Date parsedDate = dateFormat.parse(userInput);
-            Calendar startDate = Calendar.getInstance();
-            startDate.setTime(parsedDate);
+            Calendar calendarDate = Calendar.getInstance();
+            calendarDate.setTime(parsedDate);
 
-            return startDate;
+            return calendarDate;
         } catch (ParseException e) {
             throw new RuntimeException(e);
         }
