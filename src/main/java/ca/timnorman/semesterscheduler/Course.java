@@ -46,7 +46,7 @@ public class Course {
             item.setDueDate(parseDate(userInput));
         } else {
             System.out.print("Enter semester week due: ");
-            item.setWeekDueDate(keyboard.nextInt());
+            item.setWeekDue(keyboard.nextInt());
             keyboard.nextLine();
         }
 
@@ -65,12 +65,13 @@ public class Course {
      * @return Calendar object of the entered String.
      */
     private Calendar parseDate(String userInput) {
-        SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM");    // TODO Check if this needs a yyyy - confirmed, 1970 if blank.
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM");    // Only take in day and month for convenience
         Calendar dueDate;
         try {
             Date parsedDate = dateFormat.parse(userInput);
             dueDate = Calendar.getInstance();
             dueDate.setTime(parsedDate);
+            dueDate.set(Calendar.YEAR, Schedule.startDate.get(Calendar.YEAR));  // Set year to same as startDate.
         } catch (ParseException e) {
             throw new RuntimeException();
         }

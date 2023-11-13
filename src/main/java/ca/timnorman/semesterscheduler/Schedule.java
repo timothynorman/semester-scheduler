@@ -7,7 +7,7 @@ import java.util.*;
 public class Schedule {
     List<Course> schedule = new ArrayList<>();
     Scanner keyboard = new Scanner(System.in);
-    Calendar startDate;
+    static Calendar startDate;
 
     /**
      * Method to create a new schedule.
