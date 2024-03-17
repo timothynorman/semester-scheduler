@@ -4,16 +4,16 @@ import java.time.LocalDate;
 import java.util.List;
 
 public class Semester {
-    private String name;
+    private String semesterName;
     private LocalDate startDate;
     private List<Course> courses;
 
-    public String getName() {
-        return name;
+    public String getSemesterName() {
+        return semesterName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setSemesterName(String semesterName) {
+        this.semesterName = semesterName;
     }
 
     public LocalDate getStartDate() {

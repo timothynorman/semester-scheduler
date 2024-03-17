@@ -3,17 +3,17 @@ package ca.timnorman;
 import java.time.LocalDate;
 
 public class Submission {
-    private String submissionsName;
+    private String submissionName;
     private int dueWeek;
     private LocalDate dueDate;
     private int weight;
 
-    public String getSubmissionsName() {
-        return submissionsName;
+    public String getSubmissionName() {
+        return submissionName;
     }
 
-    public void setSubmissionsName(String submissionsName) {
-        this.submissionsName = submissionsName;
+    public void setSubmissionName(String submissionName) {
+        this.submissionName = submissionName;
     }
 
     public int getDueWeek() {
