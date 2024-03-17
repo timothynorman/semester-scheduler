@@ -1,0 +1,99 @@
+semester:
+  name: Spring 2024
+  startDate: 2024-01-15
+
+courses:
+  - courseId: CS101
+    courseName: Introduction to Computer Science
+    submissions:
+      - submissionName: Homework 1
+        dueWeek: 2
+        weight: 10
+      - submissionName: Project 1
+        dueWeek: 5
+        weight: 20
+        dueDate: 2024-02-28
+      - submissionName: Midterm Exam
+        dueWeek: 8
+        weight: 30
+        dueDate: 2024-03-15
+      - submissionName: Final Project
+        dueWeek: 14
+        weight: 40
+        dueDate: 2024-05-10
+
+  - courseId: EC201
+    courseName: Principles of Economics
+    submissions:
+      - submissionName: Problem Set 1
+        dueWeek: 3
+        weight: 15
+      - submissionName: Essay
+        dueWeek: 6
+        weight: 25
+        dueDate: 2024-03-05
+      - submissionName: Midterm Exam
+        dueWeek: 9
+        weight: 35
+        dueDate: 2024-04-01
+      - submissionName: Final Exam
+        dueWeek: 15
+        weight: 25
+        dueDate: 2024-05-15
+
+  - courseId: MA202
+    courseName: Calculus II
+    submissions:
+      - submissionName: Assignment 1
+        dueWeek: 2
+        weight: 10
+      - submissionName: Quiz 1
+        dueWeek: 4
+        weight: 15
+        dueDate: 2024-02-21
+      - submissionName: Midterm Exam
+        dueWeek: 8
+        weight: 30
+        dueDate: 2024-03-31
+      - submissionName: Final Exam
+        dueWeek: 15
+        weight: 45
+        dueDate: 2024-05-20
+
+  - courseId: ENG301
+    courseName: Shakespearean Literature
+    submissions:
+      - submissionName: Essay 1
+        dueWeek: 3
+        weight: 20
+      - submissionName: Presentation
+        dueWeek: 7
+        weight: 25
+        dueDate: 2024-03-08
+      - submissionName: Research Paper
+        dueWeek: 11
+        weight: 35
+        dueDate: 2024-04-25
+      - submissionName: Final Exam
+        dueWeek: 15
+        weight: 20
+        dueDate: 2024-05-18
+
+  - courseId: PSY101
+    courseName: Introduction to Psychology
+    submissions:
+      - submissionName: Quiz 1
+        dueWeek: 2
+        weight: 10
+      - submissionName: Paper 1
+        dueWeek: 5
+        weight: 20
+        dueDate: 2024-02-28
+      - submissionName: Midterm Exam
+        dueWeek: 8
+        weight: 30
+        dueDate: 2024-03-28
+      - submissionName: Final Exam
+        dueWeek: 15
+        weight: 40
+        dueDate: 2024-05-15
